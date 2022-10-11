@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Library</h1>
+            <div class="info">
+                <div class="info-box">
+                    <h3 id="total">Total books: 0</h3>
+                </div>
+                <div class="info-box">
+                    <h3 id="finished">Books read: 0</h3>
+                </div>
+                <div class="info-box">
+                    <h3 id="not-finished">Books not read: 0</h3>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="addButton">+ Add new book</div>
+            <div class="main-cards">
+            </div>
+        </div>
+        </div>
+        <div class="addButtonForm hide">
+            <h2>Add new book</h2>
+            <form action="#" id="addBookForm">
+                <div class="form-input">
+                    <label for="title">Book title*</label>
+                    <input type="text" id="title" placeholder="Title" maxlength="40" required>
+                </div>
+                <div class="form-input">
+                    <label for="author">Book author*</label>
+                    <input type="text" id="author" placeholder="Author" maxlength="40" required>
+                </div>
+                <div class="form-input">
+                    <label for="pages">Number of pages*</label>
+                    <input min="1" type="number" id="pages" placeholder="Number of pages" required>
+                </div>
+                <div class="form-input">
+                    <label for="language">Language*</label>
+                    <input type="text" id="language" placeholder="Language" maxlength="25" required>
+                </div>
+                <div class="form-input">
+                    <label for="year">Publishing year*</label>
+                    <input type="number" id="year" min="0" max="2022" required placeholder="Year of publishing">
+                </div>
+                <div class="form-input">
+                    <label for="status">Book status*</label>
+                    <select name="book-status" id="status" required>
+                        <option value="" selected disabled>Did you read it?</option>
+                        <option value="read">Read</option>
+                        <option value="not-read">Not read</option>
+                    </select>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" form="addBookForm" class="btn success-color" id="add">Add</button>
+                    <div class="btn failure-color" id="cancel">Cancel</div>
+                </div>
+            </form>
+        </div>
+
+        <script src="index.js"></script>
+</body>
+</html>

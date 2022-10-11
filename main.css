@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.5em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+}
+
+label, h3 {
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.failure-color {
+  background-color: #ef4444;
+}
+
+.success-color {
+  background-color: #84cc16;
+}
+
+.neutral-btn {
+  background-color: lightgray;
+}
+
+.hide {
+  opacity: 0;
+  top: -1000px;
+  left: -1000px;
+}
+
+.lower-opacity {
+  opacity: 0.5;
+}
+
+.show {
+  opacity: 1;
+  top: 160px;
+  left: 0;
+  right: 0;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.container {
+  display: grid;
+}
+.container header {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 20vw;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+}
+.container header h1 {
+  font-family: "Oswald", sans-serif;
+}
+.container header .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.container header .info .info-box {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
+  padding: 1em 2em;
+  background-color: lightgray;
+}
+.container .main {
+  padding: 4em 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: lightgray;
+  position: relative;
+}
+.container .main .addButton {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
+  background-color: #8b5cf6;
+  padding: 1em 3em;
+  text-align: center;
+  margin-inline: auto;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 2em;
+  font-weight: 600;
+}
+.container .main .main-cards {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 500px));
+  gap: 32px;
+}
+.container .main .main-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  background-color: white;
+  padding: 1em 2em;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.addButtonForm {
+  height: auto;
+  padding: 1em 3em;
+  width: 350px;
+  margin-inline: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
+}
+.addButtonForm select {
+  padding: 0.5em 1em;
+  border: none;
+  outline: 1px solid #6b7280;
+  background-color: white;
+}
+.addButtonForm select:disabled {
+  background-color: lightgray;
+}
+.addButtonForm form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 16px;
+}
+.addButtonForm label {
+  margin-bottom: 0.25em;
+}
+.addButtonForm .form-input {
+  display: flex;
+  flex-direction: column;
+}
+.addButtonForm .form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.addButtonForm input {
+  border: none;
+  outline: 1px solid #6b7280;
+  padding: 0.5em 1em;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
