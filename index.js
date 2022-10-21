@@ -32,13 +32,15 @@ const closeForm = (e) => {
 const displayBook = (e) => {
     e.preventDefault();
 
-    function Book (bookTitle, bookAuthor, bookPages, bookLang, bookYear, bookStatus) {
-    this.bookTitle = bookTitle;
-    this.bookAuthor = bookAuthor;
-    this.bookPages = bookPages;
-    this.bookLang = bookLang;
-    this.bookYear = bookYear;
-    this.bookStatus = bookStatus;
+    class Book {
+        constructor(bookTitle, bookAuthor, bookPages, bookLang, bookYear, bookStatus) {
+            this.bookTitle = bookTitle;
+            this.bookAuthor = bookAuthor;
+            this.bookPages = bookPages;
+            this.bookLang = bookLang;
+            this.bookYear = bookYear;
+            this.bookStatus = bookStatus;
+        }
     }
 
     let allRead = 0;
