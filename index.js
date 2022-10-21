@@ -115,7 +115,17 @@ const displayBook = (e) => {
         if (read.classList.contains('neutral-btn')) {
             readBooks -= 1;
         }
-        library.pop();
+        let index;
+        const titleOnly = title.textContent.split(' ');
+        titleOnly.shift();
+        titleOnly.shift();
+        for (let i = 0; i < library.length; i++) {
+            if (library[i].bookTitle == titleOnly.join(' ')) {
+                index = i
+            }
+        }
+        library.splice(index, 1);
+        console.log(library);
         mainCards.removeChild(card);
         finishedBooks.textContent = 'Books read: ' + readBooks;
         notFinishedBooks.textContent = 'Books not read: ' + (library.length - readBooks);
